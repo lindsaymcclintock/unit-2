@@ -6,7 +6,13 @@
             <title></title>
 
         <!--put your external stylesheet links here-->
-        <link rel="stylesheet" href="lib/leaflet-src.js.map">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+        <link rel="leaflet" href="lib/leaflet.css">
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
         <link rel="stylesheet" href="css/style.css">
         <!--[if IE<9]>
             <link rel="stylesheet" href="css/style.ie.css">
@@ -19,12 +25,12 @@
 
     <body>
         <!--put your initial page content here-->
-
+        <div id="map"></div>
         <!--you can also use this space for internal scripts;
         place these within <script> tags-->
 
         <!--put your external script links here-->
         <script type="text/javascript" src="lib/leaflet-srcjs"></script>
-        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/quickstartTutorial.js"></script>
     </body>
 </html>
