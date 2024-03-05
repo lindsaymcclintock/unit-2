@@ -1,20 +1,37 @@
 /*Add CSS styles here*/
+#title{
+height: 40px;
+width: 100%;
+background-color: rgb(180, 180, 180);
+}
+
 #map { 
-    height: 680px;
+    height: 800px;
     width: 80%;
     display: inline-block;
     }
 
     #panel {    
-        width: 16%;    
-        padding: 20px;
+        width: 19%;
+        height: 800px;    
+        padding: 1px;
         display: inline-block;
         vertical-align: top;
         text-align: center;
-        line-height: 42px;
+        line-height: 24px;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        font-weight:600;
+        background-color: rgb(180, 180, 180);
+        margin-top: 3px;
+        
     }
+    
+    .button {  
+        width: 80px;  
+    } 
     .range-slider {  
-        width: 55%;  
+        width: 55%;
+        
     }  
     
     .step {  
@@ -32,6 +49,75 @@
     #reverse {  
         float: left;  
     }
+    .button{
+        width:fit-content;
+        color: black;
+    }
+
 .leaflet-popup-content p {
     margin: 0.2em 0;
+    
+}
+
+.sequence-control-container {  
+    width: 350px;  
+    height: 30px;  
+    background-color: rgba(180, 180, 180, 0.9);  
+    padding: 10px;  
+    line-height: 45px;  
+    text-align: center;  
+    border: solid rgba(255, 255, 255, 0.8) 1px;
+ 
+}  
+
+.range-slider {  
+    width: 250px;  
+}  
+
+.step {  
+    width: 40px;  
+}  
+
+.step img {  
+    width: 100%;  
+    height: auto;  
+} 
+
+.legend-control-container{
+    width: 180px;  
+    height: 120px;  
+    background-color: rgba(180, 180, 180, 0.9);  
+    padding: 5px;  
+    line-height: 45px;  
+    text-align: center;  
+    border: solid rgba(255, 255, 255, 0.8) 1px; 
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: bold; 
+    color: black;
+}
+
+.temporalLegend{
+    font-size: large;
+    margin: auto;
+    
+}
+
+.legend{
+    color: black;
+}
+.t{
+    font-size:25px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-align:left;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.c{
+    font-size:10px;
+    color:black;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 10px;
+    
 }

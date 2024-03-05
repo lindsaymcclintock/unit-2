@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-            <title></title>
+            <title>Air Quality</title>
 
         <!--put your external stylesheet links here-->
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -25,11 +25,27 @@
 
     <body>
         <!--put your initial page content here-->
+        <div id="title">
+            <p class="t">Air Qaulity - PM2.5 </p>
+        </div>
         <div id="map"></div>
-        <div id="panel"></div>
+        <div id="panel">
+            <p>Particulate matter less than 2.5 micrometers (PM2.5) can be inhaled and 
+                cause serious health problems. </p>
+            <p>In the US, the EPA sets national standards for air quality, the Air Quality Index (AQI).</p>    
+            <img src="img/index.png" alt="AQI">
+            <p class="c">*Standards from 2013</p>
+            <p>Hover over the symbols to see how each city compares to the AQI. </p>
+            <p>Use the slider to see how the annual mean concentration
+                of PM2.5 changed from 2013-2019.<br></p> 
+                
+            <p class="c">Data source: World Health Organization Air Quality Database 2022
+            <p class="c">Information & Chart: US Environmental Protection Agency </p>
+        </div>
+
         <!--you can also use this space for internal scripts;
         place these within <script> tags-->
-
+        
         <!--put your external script links here-->
         <script type="text/javascript" src="lib/leaflet-src.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
