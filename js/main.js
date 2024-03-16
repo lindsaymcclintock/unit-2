@@ -108,7 +108,16 @@ function pointToLayer(feature, latlng, attributes){
         }); 
         
         })
+    const button1 = document.getElementById("AQI");
+    button1.addEventListener("click", function(){
+        layer.setStyle({fillColor: calcPropColor(attValue)})
+    })
+    
+    const button2 = document.getElementById("symbols");
+    button2.addEventListener("click", function(){
+        layer.setStyle({fillColor: '#3b4eff'})
         
+    })
         //return the circle marker to the L.geoJson pointToLayer option
         return layer;
 };
